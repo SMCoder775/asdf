@@ -1,0 +1,84 @@
+html {
+	background-color: darkblue;
+}
+
+#game {
+	width: 500px;
+	height: 200px;
+	border: 3px solid #e1b047;
+	background-color: #100e2f;
+	position: relative;
+}
+
+#player {
+	width: 20px;
+	height: 50px;
+	background-image: url('output-onlinepngtools.png');
+	position: absolute;
+	top: 150px;
+	left: 10px;
+}
+
+#obstacle {
+	width: 20px;
+	height: 20px;
+	background-image: url('image\ \(1\).png');
+	position: absolute;
+	bottom: 0px;
+	left: 480px;
+	animation: move 2.25s infinite;
+}
+
+#notee {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 480px;
+	animation: move 2.25s infinite;
+}
+
+#urmom {
+	width: 500px;
+	height: 40px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+@keyframes move {
+	0% {
+		left: 480px;
+	}
+
+	100% {
+		left: -40px;
+	}
+}
+
+.animate {
+	animation: jump 1000ms;
+}
+
+@keyframes jump {
+	0% {
+		top: 150px;
+	}
+	25% {
+		top: 100px;
+	}
+	75% {
+		top: 100px;
+	}
+	100% {
+		top: 150px;
+	}
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
